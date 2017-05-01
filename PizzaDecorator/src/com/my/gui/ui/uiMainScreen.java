@@ -33,25 +33,25 @@ public class uiMainScreen {
         this.mainScreen.getLblCrearPizza().setFont(new Font("Dialog",1,12));
     }
     
-    public void accionBtnCrearArma()
+    public void accionBtnCrearPizza()
     {
        controller.crearPizza();
-       imprimirStatusArma();
+       imprimirStatusPizza();
     }        
     
-    public void accionBtnAgregarSilenciador()
+    public void accionBtnAgregarSalsaTomate()
     {
         controller.agregarSalsaTomate();
-        imprimirStatusArma();
+        imprimirStatusPizza();
     }
     
-    public void accionBtnAgregarMira()
+    public void accionBtnAgregarMozzarella()
     {
         controller.agregarMozzarella();
-        imprimirStatusArma();
+        imprimirStatusPizza();
     }
     
-    private void imprimirStatusArma()
+    private void imprimirStatusPizza()
     {
         mainScreen.getTxtArStatus().setText(" ");
         if(controller.getPizza() != null)

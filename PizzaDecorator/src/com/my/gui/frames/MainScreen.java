@@ -164,15 +164,15 @@ public class MainScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCrearPizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPizzaActionPerformed
-        ui.accionBtnCrearArma();
+        ui.accionBtnCrearPizza();
     }//GEN-LAST:event_btnCrearPizzaActionPerformed
 
     private void btnAdicionarSalsaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarSalsaActionPerformed
-        ui.accionBtnAgregarSilenciador();
+        ui.accionBtnAgregarSalsaTomate();
     }//GEN-LAST:event_btnAdicionarSalsaActionPerformed
 
     private void btnAdicionarMozzarellaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarMozzarellaActionPerformed
-        ui.accionBtnAgregarMira();
+        ui.accionBtnAgregarMozzarella();
     }//GEN-LAST:event_btnAdicionarMozzarellaActionPerformed
 
     /**
