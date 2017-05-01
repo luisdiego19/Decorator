@@ -2,6 +2,8 @@ package com.my.gui.ui;
 
 import com.my.controller.Controller;
 import com.my.gui.frames.MainScreen;
+import java.awt.Color;
+import java.awt.Font;
 
 public class uiMainScreen {
     
@@ -11,6 +13,24 @@ public class uiMainScreen {
     public uiMainScreen(MainScreen mainScreen) {
         this.mainScreen = mainScreen;
         controller = new Controller();
+        colorFrame();        
+    }
+    
+    private void colorFrame()
+    {        
+        this.mainScreen.getContentPane().setBackground(new Color(60,63,65));
+        this.mainScreen.getBtnAdicionarMozzarella().setBackground(new Color(60,63,65));
+        this.mainScreen.getBtnAdicionarSalsaTomate().setBackground(new Color(60,63,65));
+        this.mainScreen.getBtnCrearPizza().setBackground(new Color(60,63,65));
+        this.mainScreen.getTxtArStatus().setBackground(new Color(69,73,74));
+        this.mainScreen.getTxtArStatus().setFont(new Font("Dialog",1,12));
+        this.mainScreen.getTxtArStatus().setForeground(new Color(187,187,187));  
+        this.mainScreen.getLblAgregarQueso().setForeground(new Color(187,187,187));
+        this.mainScreen.getLblAgregarTomate().setForeground(new Color(187,187,187));
+        this.mainScreen.getLblCrearPizza().setForeground(new Color(187,187,187));
+        this.mainScreen.getLblAgregarQueso().setFont(new Font("Dialog",1,12));
+        this.mainScreen.getLblAgregarTomate().setFont(new Font("Dialog",1,12));
+        this.mainScreen.getLblCrearPizza().setFont(new Font("Dialog",1,12));
     }
     
     public void accionBtnCrearArma()

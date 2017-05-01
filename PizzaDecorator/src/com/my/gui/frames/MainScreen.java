@@ -2,6 +2,7 @@ package com.my.gui.frames;
 
 import com.my.gui.ui.uiMainScreen;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
 public class MainScreen extends javax.swing.JFrame {
@@ -16,22 +17,35 @@ public class MainScreen extends javax.swing.JFrame {
         ui = new uiMainScreen(this);
     }
 
-    public JButton getBtnAdicionarMira() {
+    public JButton getBtnAdicionarMozzarella() {
         return btnAdicionarMozzarella;
     }
 
-    public JButton getBtnAdicionarSilenciador() {
+    public JButton getBtnAdicionarSalsaTomate() {
         return btnAdicionarSalsa;
     }
 
-    public JButton getBtnCrearArma() {
+    public JButton getBtnCrearPizza() {
         return btnCrearPizza;
     }
 
     public JTextArea getTxtArStatus() {
         return txtArStatus;
     }
+
+    public JLabel getLblAgregarQueso() {
+        return lblAgregarQueso;
+    }
+
+    public JLabel getLblAgregarTomate() {
+        return lblAgregarTomate;
+    }
+
+    public JLabel getLblCrearPizza() {
+        return lblCrearPizza;
+    }
         
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,9 +61,9 @@ public class MainScreen extends javax.swing.JFrame {
         btnCrearPizza = new javax.swing.JButton();
         btnAdicionarSalsa = new javax.swing.JButton();
         btnAdicionarMozzarella = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblCrearPizza = new javax.swing.JLabel();
+        lblAgregarTomate = new javax.swing.JLabel();
+        lblAgregarQueso = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pizza Decorator");
@@ -84,11 +98,11 @@ public class MainScreen extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Crear pizza");
+        lblCrearPizza.setText("Crear pizza");
 
-        jLabel2.setText("Agregar tomate");
+        lblAgregarTomate.setText("Agregar tomate");
 
-        jLabel3.setText("Agregar queso");
+        lblAgregarQueso.setText("Agregar queso");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,28 +111,29 @@ public class MainScreen extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCrearPizza)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(jLabel1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 42, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel2))
-                    .addComponent(btnAdicionarSalsa))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnAdicionarMozzarella)
-                        .addGap(34, 34, 34))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(68, 68, 68))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(201, 201, 201))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCrearPizza)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(57, 57, 57)
+                                .addComponent(lblCrearPizza)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(lblAgregarTomate))
+                            .addComponent(btnAdicionarSalsa))
+                        .addGap(72, 72, 72)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnAdicionarMozzarella)
+                                .addGap(34, 34, 34))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblAgregarQueso)
+                                .addGap(68, 68, 68))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,7 +143,7 @@ public class MainScreen extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnAdicionarMozzarella)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3))
+                        .addComponent(lblAgregarQueso))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -137,11 +152,11 @@ public class MainScreen extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(btnAdicionarSalsa)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2))
+                                .addComponent(lblAgregarTomate))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(btnCrearPizza)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1)))))
+                                .addComponent(lblCrearPizza)))))
                 .addGap(40, 40, 40))
         );
 
@@ -199,10 +214,10 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnAdicionarMozzarella;
     private javax.swing.JButton btnAdicionarSalsa;
     private javax.swing.JButton btnCrearPizza;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblAgregarQueso;
+    private javax.swing.JLabel lblAgregarTomate;
+    private javax.swing.JLabel lblCrearPizza;
     private javax.swing.JTextArea txtArStatus;
     // End of variables declaration//GEN-END:variables
 }
