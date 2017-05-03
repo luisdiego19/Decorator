@@ -51,11 +51,18 @@ public class uiMainScreen {
         imprimirStatusPizza();
     }
     
+    public void accionTestMethod()
+    {
+        controller.runTestMethod();
+        imprimirStatusPizza();
+    }
+    
+    
     private void imprimirStatusPizza()
     {
         mainScreen.getTxtArStatus().setText(" ");
         if(controller.getPizza() != null)
             mainScreen.getTxtArStatus().setText(controller.getPizza().getDescription() 
             + "\n Cost: " + controller.getPizza().getCost());
-    }    
+    }            
 }
