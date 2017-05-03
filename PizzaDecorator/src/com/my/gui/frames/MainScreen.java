@@ -64,7 +64,7 @@ public class MainScreen extends javax.swing.JFrame {
         lblCrearPizza = new javax.swing.JLabel();
         lblAgregarTomate = new javax.swing.JLabel();
         lblAgregarQueso = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnTestButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pizza Decorator");
@@ -105,10 +105,10 @@ public class MainScreen extends javax.swing.JFrame {
 
         lblAgregarQueso.setText("Agregar queso");
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnTestButton.setText("Test Method");
+        btnTestButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnTestButtonActionPerformed(evt);
             }
         });
 
@@ -145,8 +145,8 @@ public class MainScreen extends javax.swing.JFrame {
                                         .addComponent(lblAgregarQueso)
                                         .addGap(68, 68, 68))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(96, 96, 96)
-                                .addComponent(jButton1)
+                                .addGap(80, 80, 80)
+                                .addComponent(btnTestButton)
                                 .addGap(0, 0, Short.MAX_VALUE))))))
         );
         layout.setVerticalGroup(
@@ -168,8 +168,8 @@ public class MainScreen extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblCrearPizza))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(41, 41, 41)
-                                .addComponent(jButton1)
+                                .addGap(43, 43, 43)
+                                .addComponent(btnTestButton)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnAdicionarSalsa)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -192,9 +192,9 @@ public class MainScreen extends javax.swing.JFrame {
         ui.accionBtnAgregarMozzarella();
     }//GEN-LAST:event_btnAdicionarMozzarellaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnTestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestButtonActionPerformed
         ui.accionTestMethod();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnTestButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,7 +235,7 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnAdicionarMozzarella;
     private javax.swing.JButton btnAdicionarSalsa;
     private javax.swing.JButton btnCrearPizza;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnTestButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblAgregarQueso;
     private javax.swing.JLabel lblAgregarTomate;

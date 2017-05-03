@@ -62,10 +62,11 @@ public class Controller {
         if(pizza instanceof TomatoSauce)        
             ((TomatoSauce)pizza).tomatoSauceTestMethod();
         else {  
-            if(!(pizza instanceof PlainPizza))            
+            if(!(pizza instanceof PlainPizza) && 
+               !(((ToppingDecorator)pizza).getTempPizza() instanceof PlainPizza))            
                 runTestMethod((ToppingDecorator)((ToppingDecorator)pizza).getTempPizza());   
             else
-                System.out.println("Not a tomato sauce");                     
+                System.out.println("Not a tomato sauce");       
         }
     }    
 }
